@@ -6,9 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service order list page</title>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body class="container-fluid">
+    <div class="d-flex flex-wrap m-2">
+      <div class="m-2">
+        <i class="text-primary p-2 bi bi-pencil-fill"></i>
+        <span class="d-block">Edit</span>
+      </div>
+        <div class="m-2">
+          <i class="bi p-2 bi-file-earmark"></i>
+          <span class="d-block">View</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-table p-2"></i>
+          <span class="d-block">Edit List</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-file-earmark-post"></i>
+          <span class="d-block">Quote</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-file-earmark-post-fill p-5"></i>
+          <span class="d-block">Service Order New</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-play-fill p-2 text-success"></i>
+          <span class="d-block">Start</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-arrow-right-circle p-2"></i>
+          <span class="d-block">Finish</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-clock-history p-2"></i>
+          <span class="d-block">History</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-clock-history p-3"></i>
+          <span class=" d-block">Nav History</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-arrow-bar-down text-danger p-5"></i>
+          <span class=" d-block">Sign and close down</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-card-heading p-2"></i>
+          <span class=" d-block">Preview</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-boxes p-5"></i>
+          <span class=" d-block">Inventory Lookup</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-credit-card p-2"></i>
+          <span class="d-block">Email</span>
+        </div>
+        <div class="m-2">
+          <i class="text-primary bi bi-arrow-right-circle p-2"></i>
+          <span class="d-block">Update</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-printer-fill p-2"></i>
+          <span class="d-block">Print</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-file-bar-graph p-4"></i>
+          <span class="d-block">Show as Chart</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-file-fill p-2 text-warning"></i>
+          <span class="d-block">Notes</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-link p-2 text-primary"></i>
+          <span class="d-block">Links</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-arrow-repeat text-success p-3"></i>
+          <span class="d-block">Refresh</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-funnel-fill p-4"></i>
+          <span class="d-block">Clear filter</span>
+        </div>
+        <div class="m-2">
+          <i class="bi bi-binoculars-fill p-2"></i>
+          <span class="d-block">Find</span>
+        </div>
+
+    </div>
+    
+    
     <div class="row m-2">
       <div class="col-sm-8">
         <div class="d-flex align-items-start">
@@ -23,10 +113,11 @@
     </div>
 
 
-      <table class="table">
-
+    <div class="row m-2">
+      <div class="col-sm-12">
+        <table class="table">
           <thead>
-            <tr>
+            <tr scope="row">
                  <th scope="col">Technician</th> 
                  <th scope="col">No</th> 
                  <th scope="col">Ticket Type</th>
@@ -39,10 +130,9 @@
                <th scope="col">Zip Code</th> 
                <th scope="col">Reason Description</th>
                <th scope="col">Tax Liable</th>   
-          </div>
              <thead>
               <tbody>
-                <tr>
+                <tr scope="row">
                   <td>Technician Name</td>
                   <td>number</td>
                   <td>ticket</td>
@@ -60,7 +150,9 @@
                 </tr>
               </tbody>
       </table>
+      </div>
 
+    </div>
 
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
   </body>
