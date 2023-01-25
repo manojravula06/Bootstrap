@@ -104,54 +104,67 @@
         </nav>
       </div>
     </div>
- 
+
+    <!-- List start here -->
       <div class="container-fluid">
         <div class="row m-2">
-          <div class="col-sm-xs-10">
-            <div class="d-flex align-items-start">
-              <div class="display-7 text-primary fw-bolder">Mobile Tech Dashboard</div>
-            </div>
-            <div class="d-flex justify-content-end m-2">
-              <input type="text" placeholder="Type of filter | Technician"><button type="button" class="">
-                <i class="bi bi-arrow-right-short"></i>
-              </button>
-            </div>
-          </div>
-      </div>
-    </div>
-
-      <!-- List start here -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-2">
-            <ul class="list-group">
-              <li class="list-group-item">Departments</li>
-              <li class="list-group-item">Financial Management</li>
-              <li class="list-group-item">Sales & Marketing</li>
-              <li class="list-group-item">Purchasing</li>
-              <li class="list-group-item">Warehouse</li>
-              <li class="list-group-item">Manufacturing</li>
-              <li class="list-group-item">Jobs</li>
-              <li class="list-group-item">Resoursing Planning</li>
-              <li class="list-group-item">Services</li>
-              <li class="list-group-item">Human Resources</li>
-              <li class="list-group-item">Payroll</li>
-              <li class="list-group-item">Administration</li>
-              <li class="list-group-item">TFS Menus</li>
-              <li class="list-group-item">RMS</li>
-              <li class="list-group-item">Mobile Tech</li>
-              <li class="list-group-item">Business Notification</li>
-              <li class="list-group-item">TBS</li>
-              <li class="list-group-item">Andrew</li>
-              <li class="list-group-item">Donna</li>
-              <li class="list-group-item">Sean</li>
-              <li class="list-group-item">Payroll</li>
-              <li class="list-group-item">Mertics</li>
+          <div class="card col-2">
+            <ul class="list-group text-start">
+              <li class="p-2 list-group">
+                <div class="d-flex flex-start">
+                  <i class="bi bi-play"></i>
+                Departments
+                </div>
+              </li>
+              <li class="p-2 list-group">
+                <div class="d-flex flex-row start">
+                  <i class="bi bi-play"></i>
+                  Financial Management
+                </div>
+              </li>
+              
+              <li class="list-group p-2">Sales & Marketing</li>
+              <li class="list-group p-2">Purchasing</li>
+              <li class="list-group p-2">Warehouse</li>
+              <li class="list-group p-2">Manufacturing</li>
+              <li class="list-group p-2">Jobs</li>
+              <li class="list-group p-2">Resoursing Planning</li>
+              <li class="list-group p-2">Services</li>
+              <li class="list-group p-2">Human Resources</li>
+              <li class="list-group p-2">Payroll</li>
+              <li class="list-group p-2">Administration</li>
+              <li class="list-group p-2">TFS Menus</li>
+              <li class="list-group p-2">RMS</li>
+              <li class="list-group p-2">Mobile Tech</li>
+              <li class="list-group p-2">Business Notification</li>
+              <li class="list-group p-2">TBS</li>
+              <li class="list-group p-2">Andrew</li>
+              <li class="list-group p-2">Donna</li>
+              <li class="list-group p-2">Sean</li>
+              <li class="list-group p-2">Payroll</li>
+              <li class="list-group p-2">Mertics</li>
             </ul>
           </div>
           <div class="col-10">
+            <div class="container">
+              <div class="row">
+                  <div class="col-xs-10">
+                    <div class="d-flex justify-content-between">
+                      <div class="display-7 text-primary fw-bolder m-2">Mobile Tech Dashboard</div>
+                        <div>
+                          <select aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <button> <i class="text-primary bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
             <!-- Table start here -->
-            <table class="table">
+            <table class="table scrollspy-example">
               <thead>
                 <tr scope="row">
                      <th scope="col">Technician</th> 
@@ -187,17 +200,8 @@
                   </tbody>
             </table>
           </div>
-          <div class="col-xs-8">
-           
-          </div>
         </div>
-       
-      
       </div>
-
-      
-
-
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
