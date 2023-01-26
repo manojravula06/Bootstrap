@@ -15,6 +15,7 @@
   }
 .gray{
   background-color: #f5f1f1;
+  flex-wrap: wrap;
 }
 
 .heading{
