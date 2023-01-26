@@ -8,95 +8,99 @@
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css">
+
+    <script src="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.min.js"></script>
   </head>
-  <body class="container-fluid">
+  <body>
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar-expand-lg sticky-top">
+          <div class="">
+            <button class="container-fluid navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item m-2 ">
-                  <i class="text-primary bi bi-pencil-fill p-2"></i>
-                  <span class="d-block">Edit</span>
+                <li class="nav-item m-2">
+                    <i class="icons text-primary bi bi-pencil-fill"></i>
+                  <span class="d-block icon-font">Edit</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi p-2 bi-file-earmark"></i>
-                  <span class="d-block">View</span>
+                  <i class="icons bi p-2 bi-file-earmark"></i>
+                  <span class="d-block icon-font">View</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-table p-2"></i>
-                  <span class="d-block">Edit List</span>
+                  <i class="icons bi bi-table p-2"></i>
+                  <span class="d-block icon-font">Edit List</span>
+                </li>
+                <div class="vl display-7"></div>
+                <li class="nav-item m-2">
+                  <i class="icons bi bi-file-earmark-post p-2"></i>
+                  <span class="d-block icon-font">Quote</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-file-earmark-post p-2"></i>
-                  <span class="d-block">Quote</span>
+                  <i class="icons bi bi-file-earmark-post-fill p-3"></i>
+                  <span class="d-block icon-font">Service Order New</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-file-earmark-post-fill p-2"></i>
-                  <span class="d-flex">Service Order New</span>
+                  <i class="icons bi bi-play-fill p-2 text-success p-2"></i>
+                  <span class="d-block icon-font p-2">Start</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-play-fill p-2 text-success"></i>
-                  <span class="d-block">Start</span>
+                  <i class="icons bi bi-arrow-right-circle text-primary p-2"></i>
+                  <span class="d-block icon-font p-2">Finish</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-arrow-right-circle text-primary p-2"></i>
-                  <span class="d-block">Finish</span>
+                  <i class="icons bi bi-clock-history p-3"></i>
+                  <span class="d-block icon-font p-2">History</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-clock-history p-3"></i>
-                  <span class="d-block">History</span>
+                  <i class="icons bi bi-clock-history p-2"></i>
+                  <span class="d-block icon-font p-2">Nav History</span>
                 </li>
                 <li class="nav-item m-2">
-                  <i class="bi bi-clock-history p-2"></i>
-                  <span class=" d-flex">Nav History</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="bi bi-arrow-bar-down text-danger p-4"></i>
-                  <span class=" d-flex">Sign and close Job</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="bi bi-card-heading p-2 fw-bolder"></i>
-                  <span class=" d-block">Preview close Job</span>
+                  <i class="icons bi bi-arrow-bar-down text-danger p-2"></i>
+                  <span class="d-block icon-font">Sign and close Job</span>
                 </li>
     
                 <li class="nav-item m-2">
-                  <i class="bi bi-boxes p-2"></i>
-                  <span class="nav-link active">Inventory lookup</span>
+                  <i class="icons bi bi-card-heading p-3"></i>
+                  <span class="d-block icon-font">Preview close Job</span>
                 </li>
     
                 <li class="nav-item m-2">
-                  <i class="bi bi-credit-card p-2"></i>
-                  <span class=" d-flex">Email</span>
+                  <i class="icons bi bi-boxes p-3"></i>
+                  <span class="d-block icon-font">Inventory lookup</span>
                 </li>
     
                 <li class="nav-item m-2">
-                  <i class="text-primary bi bi-arrow-right-circle p-2"></i>
-                  <span class=" d-flex">Update</span>
+                  <i class="icons bi bi-credit-card p-2"></i>
+                  <span class="d-block icon-font">Email</span>
                 </li>
     
                 <li class="nav-item m-2">
-                  <i class="bi bi-card-heading p-2"></i>
-                  <span class=" d-flex">Survey</span>
+                  <i class="icons text-primary bi bi-arrow-right-circle p-2"></i>
+                  <span class="d-block icon-font">Update</span>
                 </li>
     
                 <li class="nav-item m-2">
-                  <i class="bi bi-printer-fill p-2"></i>
-                  <span class=" d-flex">Print</span>
+                  <i class="icons bi bi-card-heading p-2"></i>
+                  <span class="d-block icon-font">Survey</span>
                 </li>
+                <div class="vl display-7"></div>
                 <li class="nav-item m-2">
-                  <i class="bi bi-funnel-fill p-2"></i>
-                  <span class=" d-flex">Clear filter</span>
+                  <i class="icons bi bi-printer-fill p-2"></i>
+                  <span class="d-block icon-font">Print</span>
                 </li>
-    
-                <li class="nav-item m-2">
-                  <i class="bi bi-binoculars-fill p-2"></i>
-                  <span class=" d-flex">Find</span>
+                <div class="vl display-7"></div>
+                <li class="nav-item">
+                  <i class="icons bi bi-funnel-fill p-2"></i>
+                  <span class="d-block icon-font">Clear filter</span>
+                </li>
+                <li class="nav-item p-2">
+                  <i class="icons bi bi-binoculars-fill"></i>
+                  <span class="d-block icon-font">Find</span>
                 </li>
               </ul>
             </div>
@@ -104,104 +108,239 @@
         </nav>
       </div>
     </div>
-
     <!-- List start here -->
       <div class="container-fluid">
-        <div class="row m-2">
-          <div class="card col-2">
-            <ul class="list-group text-start">
-              <li class="p-2 list-group">
-                <div class="d-flex flex-start">
+        <div class="row">
+          <div class="col-xs-2">
+            <div class="scrollspy-example">
+              <ul class="gray list-group">
+                <li class="list-group p-2">
+                 <div class="d-flex">
                   <i class="bi bi-play"></i>
-                Departments
-                </div>
-              </li>
-              <li class="p-2 list-group">
-                <div class="d-flex flex-row start">
-                  <i class="bi bi-play"></i>
-                  Financial Management
-                </div>
-              </li>
-              
-              <li class="list-group p-2">Sales & Marketing</li>
-              <li class="list-group p-2">Purchasing</li>
-              <li class="list-group p-2">Warehouse</li>
-              <li class="list-group p-2">Manufacturing</li>
-              <li class="list-group p-2">Jobs</li>
-              <li class="list-group p-2">Resoursing Planning</li>
-              <li class="list-group p-2">Services</li>
-              <li class="list-group p-2">Human Resources</li>
-              <li class="list-group p-2">Payroll</li>
-              <li class="list-group p-2">Administration</li>
-              <li class="list-group p-2">TFS Menus</li>
-              <li class="list-group p-2">RMS</li>
-              <li class="list-group p-2">Mobile Tech</li>
-              <li class="list-group p-2">Business Notification</li>
-              <li class="list-group p-2">TBS</li>
-              <li class="list-group p-2">Andrew</li>
-              <li class="list-group p-2">Donna</li>
-              <li class="list-group p-2">Sean</li>
-              <li class="list-group p-2">Payroll</li>
-              <li class="list-group p-2">Mertics</li>
-            </ul>
+                  Departments
+                 </div>
+                </li>
+                <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                 Financial Management
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                     Sales & Marketing
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                    Purchasing
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                    Warehouse
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                    Manufacturing
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                    Jobs
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Resoursing Planning
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Services
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Human Resources
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Payroll
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Administration
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   TFS Menus
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   RMS
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Mobile Tech
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Business Notification
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   TBS
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Andrew
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Donna
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Sean
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Payroll
+                  </div>
+                 </li>
+                 <li class="list-group p-2">
+                  <div class="d-flex">
+                   <i class="bi bi-play"></i>
+                   Mertics
+                  </div>
+                 </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-10">
-            <div class="container">
-              <div class="row">
-                  <div class="col-xs-10">
+          <div class="col-xs-10">
+             <div class="row">
+               <div class="col-xs-10">
                     <div class="d-flex justify-content-between">
-                      <div class="display-7 text-primary fw-bolder m-2">Mobile Tech Dashboard</div>
-                        <div>
+                      <div class="heading text-primary m-2">Mobile Tech Dashboard</div>
+                      <div class="col-xs-2">
+                        <div class="d-flex justify-content-end mx-4">
+                          <input type="text" placeholder="Type to filter (F3)">
                           <select aria-label="Default select example">
-                            <option selected>Open this select menu</option>
+                            <option selected>Technician</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
-                          <button> <i class="text-primary bi bi-arrow-right-short"></i></button>
-                        </div>
+                          <button type="button" class="btuuon btn-light">
+                            <i class="text-primary bi bi-arrow-right-short"></i>
+                          </button>
+                      </div>
                     </div>
-                  </div>
-            </div>
+                </div>  
+             </div>
             <!-- Table start here -->
-            <table class="table scrollspy-example">
-              <thead>
-                <tr scope="row">
-                     <th scope="col">Technician</th> 
-                     <th scope="col">No</th> 
-                     <th scope="col">Ticket Type</th>
-                     <th scope="col">Payment Term Code</th> 
-                     <th scope="col">Collected</th> 
-                     <th scope="col">Over</th>
-                    <th scope="col">Address</th> 
-                   <th scope="col">City</th> 
-                   <th scope="col">State</th>
-                   <th scope="col">Zip Code</th> 
-                   <th scope="col">Reason Description</th>
-                   <th scope="col">Tax Liable</th>   
+              <div class="">
+               <table class="table table-hover" 
+               id="table"
+               data-show-columns="true"
+               data-search="true"
+               data-show-toggle="true"
+               data-pagination="true"
+               data-resizable="true">
+                <thead>
+                <tr scope="row" class="text-nowrap">
+                     <td scope="col" data-field="technician">Technician</td> 
+                     <td scope="col" data-field="no" data-sortable="true">No</td> 
+                     <td scope="col" data-field="ticket type" data-sortable="true">
+                     Ticket Type
+                    </td>
+                     <td scope="col" data-field="payment term code">Payment Term Code</td> 
+                     <td scope="col" data-field="collected">Collected</td> 
+                     <td scope="col" data-field="over">Over</td>
+                    <td scope="col"  data-field="address">Address</td> 
+                   <td scope="col" data-field="city">City</td> 
+                   <td scope="col" data-field="state">State</td>
+                   <td scope="col" data-field="zip code">Zip Code</td> 
+                   <td scope="col" data-field="reason description">Reason Description</td>
+                   <td scope="col">Tax Liable</td>   
                  <thead>
                   <tbody>
-                    <tr scope="row">
-                      <td>Technician Name</td>
-                      <td>number</td>
-                      <td>ticket</td>
-                      <td>payment code</td>
-                      <td>yes</td>
-                      <td>
-                        <input type="checkbox" id="" name="" value="">
+                    <tr scope="row" class="text-nowrap">
+                      <td class="">
+                        Technician Name
+                    </td>
+                      <td scope="col">number</td>
+                      <td scope="col">ticket</td>
+                      <td scope="col">payment code</td>
+                      <td scope="col">yes</td>
+                      <td scope="col">
+                        <input type="checkbox" id="over" name="over" value="over">
                       </td>
-                      <td>Person Address</td>
-                      <td>City</td>
-                      <td>State</td>
-                      <td>522002</td>
-                      <td>Enquiry</td>
-                      <td>yes</td>
+                      <td scope="col">Person Address</td>
+                      <td scope="col">City</td>
+                      <td scope="col">State</td>
+                      <td scope="col">522002</td>
+                      <td scope="col">Enquiry</td>
+                      <td scope="col">yes</td>
                     </tr>
                   </tbody>
             </table>
+              </div>
+          </div>
           </div>
         </div>
       </div>
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    </div>  
+
+
+
+
+
+    </div>
+    <footer>
+      <script src="../../bootstrap/js/bootstrap.min.js"></script>
+      <script src="../Js/index.js"></script>
+<link href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
   </body>
+  <script>
+    $(function() {
+      $('#table').bootstrapTable()
+    })
+  </script>
 </html>
