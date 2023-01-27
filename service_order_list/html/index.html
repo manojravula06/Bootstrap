@@ -5,106 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service order list page</title>
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css">
-
-    <script src="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.min.js"></script>
   </head>
   <body>
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg sticky-top">
-          <div class="">
-            <button class="container-fluid navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item m-2">
-                    <i class="icons text-primary bi bi-pencil-fill"></i>
-                  <span class="d-block icon-font">Edit</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi p-2 bi-file-earmark"></i>
-                  <span class="d-block icon-font">View</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-table p-2"></i>
-                  <span class="d-block icon-font">Edit List</span>
-                </li>
-                <div class="vl display-7"></div>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-file-earmark-post p-2"></i>
-                  <span class="d-block icon-font">Quote</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-file-earmark-post-fill p-3"></i>
-                  <span class="d-block icon-font">Service Order New</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-play-fill p-2 text-success p-2"></i>
-                  <span class="d-block icon-font p-2">Start</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-arrow-right-circle text-primary p-2"></i>
-                  <span class="d-block icon-font p-2">Finish</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-clock-history p-3"></i>
-                  <span class="d-block icon-font p-2">History</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-clock-history p-2"></i>
-                  <span class="d-block icon-font p-2">Nav History</span>
-                </li>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-arrow-bar-down text-danger p-2"></i>
-                  <span class="d-block icon-font">Sign and close Job</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-card-heading p-3"></i>
-                  <span class="d-block icon-font">Preview close Job</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-boxes p-3"></i>
-                  <span class="d-block icon-font">Inventory lookup</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-credit-card p-2"></i>
-                  <span class="d-block icon-font">Email</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="icons text-primary bi bi-arrow-right-circle p-2"></i>
-                  <span class="d-block icon-font">Update</span>
-                </li>
-    
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-card-heading p-2"></i>
-                  <span class="d-block icon-font">Survey</span>
-                </li>
-                <div class="vl display-7"></div>
-                <li class="nav-item m-2">
-                  <i class="icons bi bi-printer-fill p-2"></i>
-                  <span class="d-block icon-font">Print</span>
-                </li>
-                <div class="vl display-7"></div>
-                <li class="nav-item">
-                  <i class="icons bi bi-funnel-fill p-2"></i>
-                  <span class="d-block icon-font">Clear filter</span>
-                </li>
-                <li class="nav-item p-2">
-                  <i class="icons bi bi-binoculars-fill"></i>
-                  <span class="d-block icon-font">Find</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item m-2">
+          <i class="icons text-primary bi bi-pencil-fill"></i>
+        <span class="d-block icon-font">Edit</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi p-2 bi-file-earmark"></i>
+        <span class="d-block icon-font">View</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-table p-2"></i>
+        <span class="d-block icon-font">Edit List</span>
+      </li>
+      <div class="vl display-7"></div>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-file-earmark-post p-2"></i>
+        <span class="d-block icon-font">Quote</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-file-earmark-post-fill p-3"></i>
+        <span class="d-block icon-font">Service Order New</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-play-fill p-2 text-success p-2"></i>
+        <span class="d-block icon-font p-2">Start</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-arrow-right-circle text-primary p-2"></i>
+        <span class="d-block icon-font p-2">Finish</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-clock-history p-3"></i>
+        <span class="d-block icon-font p-2">History</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-clock-history p-2"></i>
+        <span class="d-block icon-font p-2">Nav History</span>
+      </li>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-arrow-bar-down text-danger p-2"></i>
+        <span class="d-block icon-font">Sign and close Job</span>
+      </li>
+
+      <li class="nav-item m-2">
+        <i class="icons bi bi-card-heading p-3"></i>
+        <span class="d-block icon-font">Preview close Job</span>
+      </li>
+
+      <li class="nav-item m-2">
+        <i class="icons bi bi-boxes p-3"></i>
+        <span class="d-block icon-font">Inventory lookup</span>
+      </li>
+
+      <li class="nav-item m-2">
+        <i class="icons bi bi-credit-card p-2"></i>
+        <span class="d-block icon-font">Email</span>
+      </li>
+
+      <li class="nav-item m-2">
+        <i class="icons text-primary bi bi-arrow-right-circle p-2"></i>
+        <span class="d-block icon-font">Update</span>
+      </li>
+
+      <li class="nav-item m-2">
+        <i class="icons bi bi-card-heading p-2"></i>
+        <span class="d-block icon-font">Survey</span>
+      </li>
+      <div class="vl display-7"></div>
+      <li class="nav-item m-2">
+        <i class="icons bi bi-printer-fill p-2"></i>
+        <span class="d-block icon-font">Print</span>
+      </li>
+      <div class="vl display-7"></div>
+      <li class="nav-item">
+        <i class="icons bi bi-funnel-fill p-2"></i>
+        <span class="d-block icon-font">Clear filter</span>
+      </li>
+      <li class="nav-item p-2">
+        <i class="icons bi bi-binoculars-fill"></i>
+        <span class="d-block icon-font">Find</span>
+      </li>
+      </ul>
+    </div>
+  </div>
         </nav>
       </div>
     </div>
@@ -121,8 +119,8 @@
                  </div>
                 </li>
                 <li class="list-group p-2">
-                  <div class="d-flex">
-                   <i class="bi bi-play"></i>
+                  <div class="d-flex>
+                    <i class="bi bi-play"></i>
                  Financial Management
                   </div>
                  </li>
@@ -275,51 +273,49 @@
               </div>
             <!-- Table start here -->
               <div class="col-xs-sm-md-12 d-flex flex-wrap">
-               <table class="table table-hover" 
-               id="table"
-               data-show-columns="true"
-               data-search="true"
-               data-show-toggle="true"
-               data-pagination="true"
-               data-resizable="true">
-                <thead>
-                <tr scope="row" class="text-nowrap">
-                     <td scope="col" data-field="technician">Technician</td> 
-                     <td scope="col" data-field="no" data-sortable="true">No</td> 
-                     <td scope="col" data-field="ticket type" data-sortable="true">
-                     Ticket Type
-                    </td>
-                     <td scope="col" data-field="payment term code">Payment Term Code</td> 
-                     <td scope="col" data-field="collected">Collected</td> 
-                     <td scope="col" data-field="over">Over</td>
-                    <td scope="col"  data-field="address">Address</td> 
-                   <td scope="col" data-field="city">City</td> 
-                   <td scope="col" data-field="state">State</td>
-                   <td scope="col" data-field="zip code">Zip Code</td> 
-                   <td scope="col" data-field="reason description">Reason Description</td>
-                   <td scope="col">Tax Liable</td>   
-                 <thead>
-                  <tbody>
-                    <tr scope="row" class="text-nowrap">
-                      <td class="">
-                        Technician Name
-                    </td>
-                      <td scope="col">number</td>
-                      <td scope="col">ticket</td>
-                      <td scope="col">payment code</td>
-                      <td scope="col">yes</td>
-                      <td scope="col">
-                        <input type="checkbox" id="over" name="over" value="over">
-                      </td>
-                      <td scope="col">Person Address</td>
-                      <td scope="col">City</td>
+                <div class="table-responsive">
+                  <table class="table table-hover" 
+                  id="table">
+                   <thead>
+                   <tr scope="row" class="text-nowrap">
+                        <td scope="col">Technician</td> 
+                        <td scope="col">No</td> 
+                        <td scope="col">
+                        Ticket Type
+                       </td>
+                        <td scope="col">Payment Term Code</td> 
+                        <td scope="col">Collected</td> 
+                        <td scope="col">Over</td>
+                       <td scope="col">Address</td> 
+                      <td scope="col">City</td> 
                       <td scope="col">State</td>
-                      <td scope="col">522002</td>
-                      <td scope="col">Enquiry</td>
-                      <td scope="col">yes</td>
-                    </tr>
-                  </tbody>
-               </table>
+                      <td scope="col">Zip Code</td> 
+                      <td scope="col">Reason Description</td>
+                      <td scope="col">Tax Liable</td>   
+                    <thead>
+                     <tbody>
+                       <tr scope="row" class="text-nowrap">
+                         <td class="">
+                           Technician Name
+                       </td>
+                         <td scope="col">number</td>
+                         <td scope="col">ticket</td>
+                         <td scope="col">payment code</td>
+                         <td scope="col">yes</td>
+                         <td scope="col">
+                           <input type="checkbox" id="over" name="over" value="over">
+                         </td>
+                         <td scope="col">Person Address</td>
+                         <td scope="col">City</td>
+                         <td scope="col">State</td>
+                         <td scope="col">522002</td>
+                         <td scope="col">Enquiry</td>
+                         <td scope="col">yes</td>
+                       </tr>
+                     </tbody>
+                  </table>
+                </div>
+               
               </div>
           
             </div>
@@ -329,12 +325,8 @@
     </div> 
   </div>
     <footer>
-      <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
       <script src="../Js/index.js"></script>
-<link href="https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </footer>
   </body>
   <script>
